@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Resume | Dhruv Parmar</title>
+
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  <style type="text/css">
+  	.resume{
+  		width: 70%;
+  		margin-top: 50px;
+  		margin-bottom: 50px;
+  		padding: 0px;
+  		align-content: center;
+  		border:  0px solid;
+  		box-shadow: 0px 0px 0px #000,
+  					0px 0px 0px #000,
+  				    0px 0px 28px #000;
+  	}
+  	@media (max-width:  786px) and (min-width: 576px){ /* eg: 755px */
+  		.resume{
+  			width: 100%;
+  		}
+		.rightpart .heading h1{
+			font-size: 25px;
+			padding: 12px;
+			margin-top: 50px;
+			line-height: 35px;
+		}
+		.heading h4{
+			font-size: 18px;
+			padding-bottom: 10px;
+		}
+		.leftpart h5{
+			font-size: 10px;
+		}
+  	}
+
+  	@media all (max-width:  768px){
+  		.resume{
+  			width: 100%;
+  		}
+  		.leftpart h5{
+  			font-size: 7px;
+  		}
+  		.rightpart .heading h1{
+  			font-size: 10px;
+  		}
+  	}
+  	@media (max-width:  992px){
+  		.resume{
+  			width: 100%;
+  		}
+  	}
+  	img{
+  		width: auto;
+  		height: 10%;
+  		margin: 0;
+  		object-fit: fill;
+  		position: relative;
+  	}
+  	.leftpart h5{
+  		margin: 10px;
+  		margin-left: 30px;
+  		padding: 10px;
+  		color: #fff;
+  		letter-spacing: 5px;
+  		font-size: 17px;
+  	}
+
+	.leftpart h5::after {
+	  content: '';
+	  display: block;
+	  width: 75%;
+	  height: 3px;
+	  background: #fecb00;
+	  margin-top: 10px;
+	  bottom: 0;
+	}
+  	.leftpart h6{
+  		margin-left: 60px;
+  		color: #fff;
+  		letter-spacing: 1px;
+  		font-size: 15px;
+  	}
+  	.leftpart p{
+  		color: #fff;
+  		margin-left: 60px;
+  		font-size: 13px;
+  	}
+  	.rightpart, .leftpart{
+  		margin: 0px;
+  		padding: 0px;
+  	}
+  	.rightpart .heading{
+  		background-color: #fecb00;
+  	}
+  	.rightpart .heading h1{
+  		padding: 50px;
+  		padding-bottom: 0px;
+  		margin: 0;
+  		font-family: sans-serif;
+  		letter-spacing: 8px;
+  		word-spacing: 5px;
+  		margin-top: 100px;
+  		color: #333;
+  	}
+  	.heading h4{
+  		margin: 0px;
+  		margin-top: 10px;
+  		margin-left: 50px;
+  		letter-spacing: 4px;
+  		word-spacing: 15px;
+  		padding-bottom: 50px;
+  	}
+  	.rightpart .about{
+  		padding: 50px;
+  		letter-spacing: 2px;
+  	}
+  	hr{
+  		border: 2px solid;
+  		color: #000;
+  	}
+  	.rightpart .about > p{
+  		text-align: justify;
+  		font-size: 15px;
+  		line-height: 23px;
+  		font-weight: 600;
+  		letter-spacing: 1px;
+  		margin-top: 30px;
+  		margin-bottom: 0px;
+  	}
+
+  	/*  work */
+  	.rightpart .work{
+  		padding: 50px;
+  		padding-top: 0px;
+  		letter-spacing: 2px;
+  	}
+  	hr{
+  		border: 2px solid;
+  		color: #000;
+  	}
+  	.rightpart .experience > p{
+  		text-align: justify;
+  		font-weight: 600;
+  		margin-top: 20px;
+  	}
+  	#github a{
+  		text-decoration: none;
+  		color: #fecb00;
+  	}
+  	#github a:hover{
+  		text-decoration: none;
+  		color: #000;
+  		transition: 0.8s;
+  	}
+  	#social a, i{
+  		font-size: 25px;
+  		text-decoration: none;
+  		color: #000;
+  	}
+  	#social #linkedin i:hover{
+  		transition: 0.5s ease-in-out;
+  		color: #0a67c3 !important;
+  	}
+  	#social #instagram i:hover{
+  		transition: 0.5s ease-in-out;
+  		color: #f84d01 !important;
+  	}
+  </style>
+</head>
+<body style="background: #666;">
+	<h1 style="color: #fff; text-align: center; padding: 30px; padding-bottom: 0px; margin-bottom: 0px;in">Responsive Resume Template</h1>
+
+	<h6 id="github" style="color: #fff; text-align: center; padding: 30px; padding-top: 0px;padding-bottom: 0px; margin-top: 0px">
+		You can visit my <a href="https://github.com/dhruvparmar2310/" target="_blank">Github</a>
+	</h6>
+
+	<!-- section of Resume Template -->
+	<section class="container resume">
+		<div class="row">
+			<!-- div of leftside -->
+			<div class="col-lg-4 col-sm-4 col-md-4 col-xs-3 col-xl-4 leftpart" style="background-color: #202027;">
+				<div style="margin: 0px">
+					<img src="https://i0.wp.com/truenorthuk.com/wp-content/uploads/2018/11/Professional-Profile-Headshots-101-1.jpg?fit=960%2C1200&ssl=1" class="img-fluid">
+				</div>
+				
+				<h5>EDUCATION</h5>
+				<h6>ENTER YOUR MAJOR</h6>	
+				<p>
+					Name of your University<br>
+					2006-2009
+				</p>
+
+				<h6 class="mt-5">ENTER YOUR MAJOR</h6>	
+				<p>
+					Name of your University<br>
+					2009-2011
+				</p>
+
+				<h5 class="mt-3">REFERANCE</h5>
+				<h6>Sara Taylore</h6>	
+				<p>
+					Director | Company Name<br>
+					T.:=) 234 56789
+				</p>
+
+				<h6>Sara Taylore</h6>	
+				<p class="mb-4">
+					Director | Company Name<br>
+					T.:=) 234 56789
+				</p>
+
+				<h6 class="mt-5">Phone</h6>	
+				<p class="mb-4">
+					+000 1256 789
+				</p>
+
+				<h6>Email</h6>	
+				<p class="mb-4">
+					example@gmail.com
+				</p>
+
+				<h6>Address</h6>	
+				<p class="mb-5">
+					your address here<br>
+					city, state - 012345
+				</p>
+			</div>
+
+			<!-- div of rightside -->
+			<div class="col-lg-8 col-sm-8 col-md-8 col-xs-9 col-xl-8 rightpart" style="background-color: #fffefe;">
+
+				<!-- div of Employee Name -->
+				<div class="heading">
+					<h1><span style="color: #000;font-weight: 700;">KAREN</span> RICHARDS</h1>
+					<h4>PROFESSIONAL TITLE</h4>	
+				</div>
+				
+				<!-- div of About Me -->
+				<div class="about">
+					<h5>ABOUT ME</h5><hr>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.  
+					</p>
+				</div>
+
+				<!-- div of Work Experience -->
+				<div class="work" style="padding-bottom: 40px;">
+					<h5>WORK EXPERIENCE</h5><hr>
+				
+					<div class="row "> 
+						<div class="col-lg-4 experience">
+							<p>2012 - 2014</p>
+						</div>
+						<div class="col-lg-8 experience">
+							<p style="margin-bottom: 0px;">JOB POSITION HERE</p>
+							<p style="margin: 0px;">Company Name</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore
+							</p>
+						</div>
+					</div>
+
+					<div class="row mt-3"> 
+						<div class="col-lg-4 experience">
+							<p>2014 - 2017</p>
+						</div>
+						<div class="col-lg-8 experience">
+							<p style="margin-bottom: 0px;">JOB POSITION HERE</p>
+							<p style="margin: 0px;">Company Name</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- div of social media -->
+				<div class="work" style="padding-top: 0px">
+					<h5>Social Media</h5><hr>
+				
+					<div class="row "> 
+						<div class="col-lg-9 col-md-8 col-sm-7 col-xs-8 experience">
+							&nbsp;
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-5 col-xs-4 experience" id="social">
+							<a href="https://www.linkedin.com/in/dhruv-parmar-484636227/" id="linkedin" target="_blank">
+								<i class="fa-brands fa-linkedin"></i>	
+							</a>
+							<a href="https://github.com/dhruvparmar2310/" id="github" target="_blank">
+								<i class="fa-brands fa-square-github"></i>	
+							</a>
+							<a href="https://www.instagram.com/dhan.parmar23/" id="instagram" target="_blank">
+								<i class="fa-brands fa-instagram"></i>	
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+</body>
+</html>
